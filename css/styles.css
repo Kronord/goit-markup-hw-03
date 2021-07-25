@@ -9,6 +9,7 @@
     --slider-color: #2F303A;
     --cards-section-color: #F5F4FA;
     --header-border-color: #ECECEC;
+    --features-margin: 30px;
 }
 
 /* Общие стили */
@@ -22,26 +23,47 @@ body {
 *::after {
     box-sizing: border-box;
 }
-.box {
-    width: 1600px;
-}
 .container {
-    width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .list {
     list-style: none;
 }
 .section {
-    padding-top: 94px;
+    padding: 94px 0;
+}
+.items {
+    padding: 0;
+    margin: 0;
+}
+.title {
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--title-color);
+    letter-spacing: 0.03em;
+}
+.image {
+    display: block;
+    width: 370px;
+}
+.team-member-image {
+    display: block;
+    width: 270px;
+}
+.link {
+    text-decoration: none;
 }
 /* Header options */
-.line {
-    width: 1600px;
+
+.head-page {
     border-bottom: 1px solid var(--header-border-color);
 }
-.head-page {
+.head-page > .container {
     display: flex;
     justify-content: space-between;
 }
@@ -53,38 +75,33 @@ body {
 /* Logo and nav menu */
 
 .logo {
-    padding: 25px 0;
     font-family: 'Raleway';
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     color: var(--title-color);
-    text-decoration: none;
     letter-spacing: 0.03em;
 }
 .web-style {
     color: var(--primary-color);
 }
 .nav-menu {
-    margin: 0;
-    padding: 32px 0;
+    margin-left: 90px;
     display: flex;
 }
 .nav-list {
     margin-right: 50px;
 }
-.nav-list:first-child {
-    margin-left: 90px;
-}
 .nav-list:last-child {
     margin-right: 0;
 }
 .menu-link {
+    display: block;
+    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     color: var(--title-color);
-    text-decoration: none;
     letter-spacing: 0.02em;
 }
 .studio {
@@ -94,8 +111,6 @@ body {
 /* Contacts */
 
 .contact-lists {
-    margin: 0;
-    padding: 32px 0;
     display: flex;
     align-items: center;
 }
@@ -110,7 +125,6 @@ body {
     font-size: 14px;
     line-height: 1.1;
     color: var(--primary-text-color);
-    text-decoration: none;
     letter-spacing: 0.02em;
 }
 .menu-link:hover,
@@ -123,18 +137,13 @@ body {
 /* Slider */
 
 .slider-section {
-    width: 1600px;
-    height: 600px;
+    text-align: center;
+    padding: 200px 0;
     background-color: var(--slider-color);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
 }
 .page-title {
-    margin: 0 0 40px 0;
-    text-align: center;
-    width: 696px;
+    margin: 0 auto 40px;
+    max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -143,14 +152,12 @@ body {
     text-transform: uppercase;
 }
 .slider-btn {
-    width: 200px;
-    height: 50px;
+    padding: 10px 32px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
@@ -163,32 +170,34 @@ body {
 }
 
 /* Feautures Section */
+.features-section {
+    padding-bottom: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-.features-title {
-    display: none;
-    visibility: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .features-lists {
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--features-margin));
 }
 .features-list {
-    flex-basis: 270px;
-}
-.title {
-    margin: 0 0 50px 0;
-    text-align: center;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.2;
-    color: var(--title-color);
-    letter-spacing: 0.03em;
+    width: calc(100% / 4 - var(--features-margin));
+    margin-right: var(--features-margin);
 }
 .name {
     margin: 0 0 10px 0;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     color: var(--title-color);
@@ -202,23 +211,28 @@ body {
     letter-spacing: 0.03em;
     color:var(--primary-text-color);
 }
-.action-section {
-    padding-bottom: 94px;
-}
 .action-lists {
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: space-between;
+}
+.action-list {
+    margin-right: var(--features-margin);
+}
+.action-list:last-child {
+    margin-right: 0;
 }
 .our-team-lists {
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--features-margin));
 }
 .team-item {
+    width: calc(100% / 4 - var(--features-margin));
+    margin-right: var(--features-margin);
     background-color: var(--secondary-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .member-name {
     margin: 0 0 10px 0;
@@ -229,20 +243,10 @@ body {
     letter-spacing: 0.03em;
     color: var(--title-color);
 }
-.first-member-box {
-    padding: 30px 59px 30px 60px;
-}
-.second-member-box {
-    padding: 30px 61px 30px 62px;
-}
-.third-member-box {
-    padding: 30px 66px 30px 67px;
-}
-.four-member-box {
-    padding: 30px 68px;
+.member-box {
+    padding: 30px 20px;
 }
 .team-section {
-    padding-bottom: 94px;
     background-color: var(--cards-section-color);
 }
 .member-discribe {
@@ -254,15 +258,14 @@ body {
     color: var(--primary-text-color);
 }
 .footer-page {
-    height: 252px;
     padding: 60px 0;
     background-color: var(--slider-color);
 }
 .footer-logo {
     display: inline-block;
     margin-bottom: 20px;
-    font-family: 'Raleway';
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -282,19 +285,15 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--address-color);
-    text-decoration: none;
 }
 .address-link:hover,
 .address-link:focus {
     color: var(--primary-color);
 }
-.contact-lists-footer {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
 .contact-item {
+    display: block;
     margin-bottom: 9px;
 }
-
+.contact-item:last-child {
+    margin-bottom: 0;
+}

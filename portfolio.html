@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,124 +8,159 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="css/portfolio.css">
 </head>
+
 <body>
-    
-   <header class="head-page">
-       <nav class="nav-page">
-           <a href="#" lang="en" class="logo"><span class="web-style">Web</span>Studio</a>
-           <ul class="nav-menu">
-               <li class="list"><a href="./index.html" class="menu-link studio">Студия</a></li>
-               <li class="list"><a href="./portfolio.html" class="menu-link portfolio">Портфолио</a></li>
-               <li class="list"><a href="#" class="menu-link">Контакты</a></li>
-           </ul>
-       </nav>
-       <ul class="contact-lists">
-           <li class="list"><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
-           <li class="list"><a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a></li>
-       </ul>
-   </header>
-    
+
+    <header class="head-page">
+        <div class="container">
+            <nav class="nav-page">
+                <a href="#" lang="en" class="logo link"><span class="web-style">Web</span>Studio</a>
+                <ul class="nav-menu items">
+                    <li class="nav-list list"><a href="./index.html" class="menu-link studio link">Студия</a></li>
+                    <li class="nav-list list"><a href="./portfolio.html" class="menu-link portfolio link">Портфолио</a>
+                    </li>
+                    <li class="nav-list list"><a href="#" class="menu-link link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contact-lists items">
+                <li class="contact-list list"><a href="mailto:info@devstudio.com"
+                        class="contact-link link">info@devstudio.com</a></li>
+                <li class="contact-list list"><a href="tel:+380961111111" class="contact-link link">+38 096 111 11
+                        11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <main class="main-page">
         <section class="section">
-            <h1 class="title-page">Наши продукты</h1>
-            <ul class="nav-lists">
-                <li class=" nav-list list">
-                    <button type="button" class="btn all">Все</button>
-                </li>
-                <li class=" nav-list list">
-                    <button type="button" class="btn webs">Веб-сайты</button>
-                </li>
-                <li class=" nav-list list">
-                    <button type="button" class="btn programs">Приложения</button>
-                </li>
-                <li class=" nav-list list">
-                    <button type="button" class="btn design">Дизайн</button>
-                </li>
-                <li class=" nav-list list">
-                    <button type="button" class="btn marketing">Маркетинг</button>
-                </li>
-            </ul>
-            <ul class="products-lists">
-                <li class="product-list list">
-                    <a href="#" class="product-link">
-                       <img src="./images/product-1.jpg" alt="Ноутбук" class="image" width="370px">
-                       <h2 class="product-name">Технокряк</h2>
-                       <p class="discribe">Веб-сайт</p>
-                    </a>
-                </li>
-                <li class="product-list list">
-                    <a href="#" class="product-link">
-                        <img src="./images/product-2.jpg" alt="Постер" class="image" width="370px">
-                        <h2 class="product-name">Постер New Orlean vs Golden Star</h2>
-                        <p class="discribe">Дизайн</p>
-                    </a>
-                </li>
-                <li class="product-list list">
-                    <a href="#" class="product-link">
-                        <img src="./images/product-3.jpg" alt="Ресторан" class="image" width="370px">
-                        <h2 class="product-name">Ресторан Seafood</h2>
-                        <p class="discribe">Приложение</p>
-                    </a>
-                </li>
-                <li class="product-list list">
-                    <a href="#" class="product-link">
-                        <img src="./images/product-4.jpg" alt="Наушники" class="image" width="370px">
-                        <h2 class="product-name">Проект Prime</h2>
-                        <p class="discribe">Маркетинг</p>
-                    </a>
-                </li>
-                <li class="product-list list">
-                    <a href="#" class="product-link">
-                        <img src="./images/product-5.jpg" alt="Коробки" class="image" width="370px">
-                        <h2 class="product-name">Проект Boxes</h2>
-                        <p class="discribe">Приложение</p>
-                    </a>
-                </li>
-                <li class="product-list list">
-                    <a href="#" class="product-link">
-                        <img src="./images/product-6.jpg" alt="Монитор" class="image" width="370px">
-                        <h2 lang="en" class="product-name">Inspiration has no Borders</h2>
-                        <p class="discribe">Веб-сайт</p>
-                    </a>
-                </li>
-                <li class="product-list list">
-                    <a href="#" class="product-link">
-                        <img src="./images/product-7.jpg" alt="Книга" class="image" width="370px">
-                        <h2 class="product-name">Издание Limited Edition</h2>
-                        <p class="discribe">Дизайн</p>
-                    </a>
-                </li>
-                <li class="product-list list">
-                    <a href="#" class="product-link">
-                        <img src="./images/product-8.jpg" alt="Лейбл" class="image" width="370px">
-                        <h2 class="product-name">Проект LAB</h2>
-                        <p class="discribe">Маркетинг</p>
-                    </a>
-                </li>
-                <li class="product-list list">
-                    <a href="#" class="product-link">
-                        <img src="./images/product-9.jpg" alt="Приложение" class="image" width="370px">
-                        <h2 lang="en" class="product-name">Growing Business</h2>
-                        <p class="discribe">Приложение</p>
-                    </a>
-                </li>
-            </ul>
+            <div class="container">
+                <h1 class="visually-hidden">Наши продукты</h1>
+                <ul class="button-lists items">
+                    <li class=" button-list list">
+                        <button type="button" class="btn all">Все</button>
+                    </li>
+                    <li class=" button-list list">
+                        <button type="button" class="btn webs">Веб-сайты</button>
+                    </li>
+                    <li class=" button-list list">
+                        <button type="button" class="btn programs">Приложения</button>
+                    </li>
+                    <li class=" button-list list">
+                        <button type="button" class="btn design">Дизайн</button>
+                    </li>
+                    <li class=" button-list list">
+                        <button type="button" class="btn marketing">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="products-lists items">
+                    <li class="product-list list">
+                        <a href="#" class="product-link link">
+                            <img src="./images/product-1.jpg" alt="Ноутбук" class="image" width="370px">
+                            <div class="card-description">
+                                <h2 class="product-name title">Технокряк</h2>
+                                <p class="discribe">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-list list">
+                        <a href="#" class="product-link link">
+                            <img src="./images/product-2.jpg" alt="Постер" class="image" width="370px">
+                            <div class="card-description">
+                                <h2 class="product-name title">Постер New Orlean vs Golden Star</h2>
+                                <p class="discribe">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-list list">
+                        <a href="#" class="product-link link">
+                            <img src="./images/product-3.jpg" alt="Ресторан" class="image" width="370px">
+                            <div class="card-description">
+                                <h2 class="product-name title">Ресторан Seafood</h2>
+                                <p class="discribe">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-list list">
+                        <a href="#" class="product-link link">
+                            <img src="./images/product-4.jpg" alt="Наушники" class="image" width="370px">
+                            <div class="card-description">
+                                <h2 class="product-name title">Проект Prime</h2>
+                                <p class="discribe">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-list list">
+                        <a href="#" class="product-link link">
+                            <img src="./images/product-5.jpg" alt="Коробки" class="image" width="370px">
+                            <div class="card-description">
+                                <h2 class="product-name title">Проект Boxes</h2>
+                                <p class="discribe">Приложение</p>                               
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-list list">
+                        <a href="#" class="product-link link">
+                            <img src="./images/product-6.jpg" alt="Монитор" class="image" width="370px">
+                            <div class="card-description">
+                                <h2 lang="en" class="product-name title">Inspiration has no Borders</h2>
+                                <p class="discribe">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-list list">
+                        <a href="#" class="product-link link">
+                            <img src="./images/product-7.jpg" alt="Книга" class="image" width="370px">
+                            <div class="card-description">
+                                <h2 class="product-name title">Издание Limited Edition</h2>
+                                <p class="discribe">Дизайн</p>    
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-list list">
+                        <a href="#" class="product-link link">
+                            <img src="./images/product-8.jpg" alt="Лейбл" class="image" width="370px">
+                            <div class="card-description">
+                                <h2 class="product-name title">Проект LAB</h2>
+                                <p class="discribe">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-list list">
+                        <a href="#" class="product-link link">
+                            <img src="./images/product-9.jpg" alt="Приложение" class="image" width="370px">
+                            <div class="card-description">
+                                <h2 lang="en" class="product-name title">Growing Business</h2>
+                                <p class="discribe">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer class="footer-page">
-        <a href="#" class="footer-logo"><span class="web-style">Web</span>Studio</a>
-        <address class="company-adress">
-            г. Киев, пр-т Леси Украинки, 26
-            <ul class="contact-lists">
-                <li class="list"><a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a></li>
-                <li class="list"><a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a href="#" class="footer-logo link"><span class="web-style">Web</span>Studio</a>
+            <address class="adress">
+                <p class="company-adress">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="contact-lists-footer items">
+                    <li class="contact-item list"><a href="mailto:info@devstudio.com" class="address-link link">info@devstudio.com</a></li>
+                    <li class="contact-item list"><a href="tel:+380961111111" class="address-link link">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
-    
+
 </body>
+
 </html>
