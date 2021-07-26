@@ -63,7 +63,7 @@ body {
 /* Logo and nav menu */
 
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -75,7 +75,7 @@ body {
     color: var(--primary-color);
 }
 .nav-menu {
-    margin-left: 90px;
+    margin-left: 93px;
     display: flex;
 }
 .nav-list {
@@ -151,7 +151,6 @@ body {
 .btn {
     padding: 6px 22px;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
     background-color: var(--btn-color);
     text-align: center;
     font-weight: 500;
@@ -179,7 +178,7 @@ body {
     margin-bottom: calc(-1 * var(--cards-margin));
 }
 .product-list {
-    width: calc((100% - 3) / 3 - var(--cards-margin));
+    width: calc((100% - 3 * var(--cards-margin)) / 3);
     margin-right: var(--cards-margin);
     margin-bottom: var(--cards-margin);
 }
